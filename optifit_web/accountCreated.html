@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 40px 0;
+          background: url('background_light.jpg');
+          background-position: center;
+        }
+          h1 {
+            color: rgba(228, 27, 0, 0.811);
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            margin-bottom: 10px;
+          }
+          p {
+            color: #404F5E;
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-size:20px;
+            margin: 0;
+          }
+        i {
+          color: black;
+          font-size: 100px;
+          line-height: 200px;
+          margin-left:-15px;
+        }
+        .card {
+          background: white;
+          padding: 60px;
+          border-radius: 4px;
+          box-shadow: 0 2px 3px #C8D0D8;
+          display: inline-block;
+          margin: 0 auto;
+          padding-bottom: 30px;
+        }
+        @media only screen and (max-width:900px) {
+            .card{
+                display: flex;
+                width: 80%;
+                
+            }
+        }
+  
+      </style>
+  </head>
+    
+    <body>
+      <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: rgba(228, 27, 0, 0.125); margin:0 auto;">
+        <i class="checkmark">✓</i>
+      </div>
+        <h1>Success</h1> 
+        <p>Account Created Successfully!</p><br>
+        <a href="index.html">Click to Login</a>
+      </div>
+    </body>
+</html>

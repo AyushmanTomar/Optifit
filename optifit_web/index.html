@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images\logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Optifit-opt for a fit life</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pre-loader" id="preloader">
+            <div class="loader" id="loader-icon"></div>
+        </div>
+        <nav id="header">
+            <div class="nav-logo">
+                <img src="images\logo.jpg" alt="Can't load">
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="pagemain1.html" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#community" class="nav-link">Community</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#footer" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li>
+                        <div class="nav-button2">
+                            <button class="btn" onclick="login_redirect()">Sign-up <i
+                                    class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-button">
+                <button class="btn" onclick="login_redirect()">Sign-up <i
+                        class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </div>
+            <div class="nav-menu-btn" onclick="myMenuFunction()">
+                <i class="uil uil-bars"></i>
+            </div>
+        </nav>
+
+        <main class="wrapper">
+            <section class="section" id="featured-box">
+                <div class="icon-text">
+                    <div class="social_icons">
+                        <div class="icon" id="linkedin"> <i class="uil uil-twitter-alt"></i></div>
+                        <div class="icon" id="instagram"> <i class="uil uil-instagram"></i></div>
+                        <div class="icon" id="github"> <i class="uil uil-phone-alt"></i></div>
+                        <div class="icon" id="mail"> <i class="uil uil-envelope"></i></div>
+                    </div>
+                    <div class="featured-text">
+                        <div class="featured-text-card">
+                        </div>
+                        <div class="featured-name">
+                            <p>OPTIFIT- <span class="typedText"></span></p>
+                        </div>
+                        <div class="featured-text-info">
+                            <!-- i have to enter myskills in this para graph -->
+                            <p>Optifit is an all-in-one fitness app designed to
+                                help users achieve their health and fitness
+                                goals by providing comprehensive features
+                                and tools. Optifit offers an extensive database with
+                                accurate calorie counts for a wide range of
+                                sports and activities.</p>
+                        </div>
+                        <div class="fetured-text-button">
+                            <button class="btn purple-btn" onclick="hireMe()">Fitness</button>
+                            <a href="./optifit-pans.pdf" download><button class="btn " id="downloadResume"
+                                    onclick="downloadAlert()">Download Plans <i
+                                        class="uil uil-file-download-alt"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-form">
+                    <form action="">
+                        <div class="login-box">
+                            <div class="login-header">
+                                <header>Welcome</header>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" class="input-field" id="email" autocomplete="off" required>
+                                <label for="email">Email or phone</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" class="input-field" id="password" autocomplete="off" required>
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="forgot">
+                                <section class="form">
+                                    <input type="checkbox" id="check">
+                                    <label for="check">Remember me</label>
+                                </section>
+                                <section class="form">
+                                    <a href="#" class="forgot-link">Forgot password?</a>
+                                </section>
+                            </div>
+                            <div class="input-box">
+                                <input type="submit" class="input-submit" value="Log In" onclick="openAccount()">
+                            </div>
+                            <div class="middle-text">
+                                <hr>
+                                <p class="or-text">Or</p>
+                            </div>
+                            <div class="social-sign-in">
+                                <button class="input-google">
+                                    <i class="fa-brands fa-google"></i>
+                                    <p>Log In with Google</p>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section" id="about">
+                <div class="about-box">
+                    <div class="about-pic-box">
+                        <img src="images\description.svg" alt="fighter">
+                    </div>
+                    <div class="about-description">
+                        <div class="about-heading">
+                            <h2>About OPTIFIT</h2>
+                        </div>  
+                        <div class="about-para">
+                            <ul>
+                                <label><span>OPTIFIT</span> is an all-in-one fitness app designed to
+                                    help users achieve their health and fitness
+                                    goals by providing comprehensive features
+                                    and tools.</label>
+                                <div class="items-about">
+                                    <li style="list-style: circle;">
+                                        OPTIFIT offers an extensive database with
+                                        accurate calorie counts for a wide range of
+                                        sports and activities. Whether it's running,
+                                        swimming, cycling, or even martial arts, users
+                                        can easily track their calorie burn and
+                                        progress
+                                    </li>
+                                    <li style="list-style: circle;">
+                                        OPTIFIT targets individuals who are interested in improving their
+                                        overall fitness and wellbeing. The app caters to different customer
+                                        segments, including fitness enthusiasts, beginners looking to adopt a
+                                        healthier lifestyle, and people with specific fitness goals such as
+                                        weight loss, muscle gain, or improved cardiovascular health.
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="custom-nutrition">
+                <div class="nutrition-box">
+                    <div class="nutrition-desciption">
+                        <div class="nutrition-heading">
+                            <h2>Personal Nutrition</h2>
+                        </div>
+                        <div class="nutrition-para">
+                            <div class="nutrition-list">
+                                <span>Chat:</span>Get instant assistance from 
+                                our AI to plan your diet
+                            </div>
+                            <div class="nutrition-list">
+                                <span>Schedule Calls:</span> Speak directly with our nutritionist at your convenience 
+                            </div>
+                            <div class="nutrition-list">
+                                <span>Water Tracker:</span> Helps you stay hydrated
+                            </div>
+                            <div class="nutrition-list">
+                                <span>Meal Log:</span> Helps you follow assigned diets
+                            </div>
+                            <div class="nutrition-list">
+                                <span>Calorie Counter:</span>Tracks the calories consumed by you each day
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nutrition-img">
+                        <img src="images\bowl.svg" alt="bowl">
+                    </div>
+                </div>
+                
+            </section>
+            <section class="section" id="community">
+                <div class="community-box">
+                    <div class="community-img">
+                        <img src="images\communitypeople.svg" alt="community image">
+                    </div>
+                    <div class="community-description">
+                        <div class="community-heading">
+                            <h2>COMMUNITY</h2>
+                        </div>
+                        <div class="community-para">
+                            <div class="community-list">
+                                <b>OPTIFIT </b> encourages social 
+                                    interaction and support 
+                                    among users through its 
+                                    built-in community 
+                                    features. Users can 
+                                    connect with friends, 
+                                    share achievements, and 
+                                    participate in challenges 
+                                    and competitions. The 
+                                    app fosters a sense of 
+                                    community, providing 
+                                    motivation and 
+                                    accountability to help 
+                                    users stay on track.
+                            </div>
+                            <div class="community-list">
+                                <b>OPTIFIT</b>lets you collaboratre with people in your area that play similar kind of sports.
+                            </div>
+                            <div class="community-list">
+                                <b>OPTIFIT</b>helps you find like minded atheletes. You can play games, Sports or participate in various compretitions together.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="workout">
+                <div class="workout-box">
+                    <div class="workout-description">
+                        <div class="workout-heading">
+                            <p>CREATE CUSTOM WORKOUT ROUTINES</p>
+                        </div>
+                        <div class="workout-para">
+                            <p><b>OPTIFIT</b> will use its advanced 
+                                algorithm to generate a complete 
+                                workout plan for individual.</p>
+                            <p><b>It</b> will be based on user preferences
+                                and diet plans.</p>
+                        </div>
+                        <h1></h1>
+                    </div>
+                    <div class="workout-img-box">
+                        <img src="images\workout.png" alt="workout">
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <section class="footer" id="footer">
+                <div class="footer-container">
+                    <h1 id="cont" class="cnt">Contact Me</h1>
+                    <div class="social_icons2">
+                        <div class="icon" id="linkedin1"> <i class="uil uil-twitter-alt"></i></div>
+                        <div class="icon" id="instagram1"> <i class="uil uil-instagram"></i></div>
+                        <div class="icon" id="github1"> <i class="uil uil-phone-alt"></i></div>
+                        <div class="icon" id="mail1"> <i class="uil uil-envelope"></i></div>
+                    </div>
+                    <!-- <div class="social_icons_name">
+                                <div>linkedin</div>
+                                <div>Instagram</div>
+                                <div>gitHub</div>
+                                <div>Mail</div>
+                            </div> -->
+                    <span class="mob" style="margin-top: 30px;">Mobile: +91 8318388796</span>
+                    <span class="rights">@ all rights reserved Ayushman Tomar</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js\main.js"></script>
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+            document.getElementById("loader-icon").style.display= "none";
+        })
+    </script>
+</body>
+
+</html>

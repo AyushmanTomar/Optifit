@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <link rel="shortcut icon" href="images\logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css\pagemain1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pre-loader" id="preloader">
+            <div class="loader" id="loader-icon"></div>
+        </div>
+        <nav id="header">
+            <div class="nav-logo" id="logo1">
+                <img src="images\logo.jpg" alt="Can't load">
+            </div>
+            <div class="nav-button2">
+                    <button class="btn-active" onclick="myActivityFunction()">Activities <i class="uil uil-dumbbell"></i></button>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    
+                    <li class="nav_list">
+                        <a href="index.html#home" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="index.html#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="index.html#footer  " class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list" id="community-divv">
+                        <a href="community.html" class="nav-link" id="community">Community</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn" onclick="myMenuFunction()">
+                <i class="uil uil-bars"></i>
+            </div>
+        </nav>
+
+
+        <main class="wrapper">
+            <div class="side-bar" id="sidebar1">
+                <div id="side-bar-heading">
+                    <p>ACTIVITIES <i class="uil uil-dumbbell"></i></p>
+                </div>
+                <div class="activity-list">
+                <div class="activity" onclick="openWalking()"><p>Walking <i class="fa-solid fa-shoe-prints" id="shoe"></i></p></div>
+                <div class="activity" onclick="openSwimming()"><p>Swimming <i class="fa-solid fa-person-swimming" ></i></p></div>
+                <div class="activity" onclick="openRunning()"><p>Running <i class="fa-solid fa-person-running"></i></p></div>
+                <div class="activity" onclick="openCricket()" id="select-div"><p>Cricket <i class="fa-solid fa-baseball-bat-ball"></i></p></div>
+                <div class="activity" onclick="openFootball()"><p>Football <i class="fa-solid fa-futbol"></i></p></div>
+                <div class="activity" onclick="openCycling()"><p>Cycling <i class="fa-solid fa-bicycle"></i></p></div>
+                <div class="activity" onclick="openTennis()"><p>Tennis <i class="fa-solid fa-table-tennis-paddle-ball"></i></p></div>
+                <div class="activity" onclick="openBadminton()"><p>Badminton <i class="uil uil-shutter"></i></p></div>
+                <div class="activity" onclick="openTrekking()"><p>Trekking <i class="fa-solid fa-person-hiking"></i></p></div>
+                <div class="activity" onclick="openGolf()"><p>Golf <i class="fa-solid fa-golf-ball-tee"></i></p></div>
+                </div>
+            </div>
+            <div class="main-content">      
+                <div class="img-main">
+                    <img src="images\cricket.png" alt="walking img">
+                </div>
+                <div class="main-activity-calc">
+                    <div class="activity-box">
+                        <div class="activity-box-heading">
+                            <h2>Cricket Calories</h2>
+                        </div>
+                        <div class="activity-box-calc">
+                            <div class="cal-answer">
+                                <h2 id="answer">Burnt: 0</h2>
+                            </div>
+                            <div class="input-parameters">
+                                <label for="weight">Enter Weight:</label><br>
+                                <input type="number" name="weight" class="walk-input" placeholder="In Kg" id="weight">
+                            </div>
+                            <div class="input-parameters">
+                                <label for="time">Enter time:</label><br>
+                                <input type="number" name="time" class="walk-input" placeholder="In Minutes" id="time">
+                            </div>
+                            <div class="calc-btn">
+                                <button class="btn" onclick="calculateCalori()">Calulate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="brief">
+                <div class="goals">
+                    <div id="brief-heading">
+                        <p>Today's Goal <i class="fa-solid fa-medal"></i></p>
+                    </div>
+                    <div id="chart_head">My Activities</div>
+                    <div id="piechart_3d"></div>
+                    <div class="chat-values">
+                        <div class="value-list"></div>
+                        <div class="value-list"></div>
+                        <div class="value-list"></div>
+                        <div class="value-list"></div>
+                        <div class="value-list"></div>
+                    </div>
+                    <div class="calenderbox">
+                        <header>
+                          <p class="current-date"></p>
+                          <div class="icons">
+                            <span id="prev" class="material-symbols-rounded"><i class="fa-solid fa-arrow-left"></i></span>
+                            <span id="next" class="material-symbols-rounded"><i class="fa-solid fa-arrow-right"></i></span>
+                          </div>
+                        </header>
+                        <div class="calendar">
+                          <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                          </ul>
+                          <ul class="days"></ul>
+                        </div>
+                      </div>
+                </div>
+                <div class="brief-button">
+                    <button class="btn" id="chatav">Chat with AVINYA</button>
+                    <button class="btn" id="support"><i class="fa-solid fa-headset"></i></button>
+                </div>
+        
+            </div>
+        </main>
+        <section class="footer" id="footer">
+            <div class="footer-container">
+                    <h1 id="cont" class="cnt">Contact Me</h1>
+                    <div class="social_icons2">
+                        <div class="icon" id="linkedin1"> <i class="uil uil-twitter-alt"></i></div>
+                        <div class="icon" id="instagram1"> <i class="uil uil-instagram"></i></div>
+                        <div class="icon" id="github1"> <i class="uil uil-phone-alt"></i></div>
+                        <div class="icon" id="mail1"> <i class="uil uil-envelope"></i></div>
+                    </div>
+                    <span class="mob" style="margin-top: 30px;">Mobile: +91 8318388796</span>
+                <span class="rights">@ all rights reserved Ayushman Tomar</span>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="js\pagemain1.js"></script>
+    <script src="js\cricket.js"></script>
+</body>
+</html>

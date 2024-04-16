@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="shortcut icon" href="images\logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css\pagemain1.css">
+    <link rel="stylesheet" href="css\community.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="pre-loader" id="preloader">
+            <div class="loader" id="loader-icon"></div>
+        </div>
+        <nav id="header">
+            <div class="nav-logo" id="logo1">
+                <img src="images\logo.jpg" alt="Can't load">
+            </div>
+            <div class="nav-button2">
+                <button class="btn-active" onclick="myMenuFunction()">Explore</button>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#" class="nav-link" id="community">For-You</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#" class="nav-link">Following</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn" onclick="myActivityFunction()">
+                <i class="uil uil-bars"></i>
+            </div>
+        </nav>
+
+
+        <main class="wrapper">
+            <div class="side-bar" id="sidebar1">
+                <div class="activity-list">
+                    <div class="activity-list-align">
+                        <div class="activity" onclick="openHome()">
+                            <p><i class="fa-solid fa-house"></i> Home </p>
+                        </div>
+                        <div class="activity" onclick="openExplore()">
+                            <p><i class="fa-solid fa-magnifying-glass"></i> Explore </p>
+                        </div>
+                        <div class="activity" onclick="openNotification()">
+                            <p><i class="fa-solid fa-bell"></i> Notification</p>
+                        </div>
+                        <div class="activity" onclick="openMessages()">
+                            <p><i class="fa-solid fa-envelope"></i> Messages</p>
+                        </div>
+                        <div class="activity" onclick="openAV()">
+                            <p><i class="fa-solid fa-brain"></i> Avinya</p>
+                        </div>
+                        <div class="activity" onclick="openGroups()">
+                            <p><i class="fa-solid fa-people-group"></i> Groups</p>
+                        </div>
+                        <div class="activity" onclick="openPremium()">
+                            <p><i class="fa-solid fa-coins"></i> Premium</p>
+                        </div>
+                        <div class="activity" onclick="openProfile()">
+                            <p><i class="fa-solid fa-user"></i> Profile </p>
+                        </div>
+                        <div class="activity" onclick="openMore()">
+                            <p><i class="fa-solid fa-bars"></i> More</p>
+                        </div>
+                        <!-- <div class="activity" onclick="openGolf()"><p><i class="fa-solid fa-golf-ball-tee"></i></p></div> -->
+                    </div>
+                    <div id="side-bar-heading">
+                        <p>POST</p>
+                    </div>
+                    <div class="profile-divv">
+                        <div class="profile-pic">
+                            <img src="images\icons8-brown-hair-business-lady-with-glasses-50.png" alt="profile">
+                        </div>
+                        <div class="profile-description">
+                            <b id="profile-heading">Ms. Ratnam Tomar</b>
+                            <b>Sports:</b>
+                            <p>Badminton level-32</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-content">
+                <div class="feeds">
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="images\icons8-administrator-male-50.png"
+                                alt="" />
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__headerText">
+                                    <h3>
+                                        Ayushman Tomar
+                                        <span class="post__headerSpecial">@ayushmMAAN</span>
+                                    </h3>
+                                </div>
+                                <div class="post__headerDescription">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <img src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+                                alt="" />
+                            <div class="post__footer">
+                                <span class="material-icons action0"><i class="fa-regular fa-heart"></i></span>
+                                <span class="material-icons action0"><i class="fa-regular fa-comment"></i></span>
+                                <span class="material-icons action0"><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="images\icons8-bolivian-girl-100.png"
+                                alt="" />
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__headerText">
+                                    <h3>
+                                        Ayushi Tomar
+                                        <span class="post__headerSpecial">@ayuiii</span>
+                                    </h3>
+                                </div>
+                                <div class="post__headerDescription">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <img src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+                                alt="" />
+                            <div class="post__footer">
+                                <span class="material-icons action1"><i class="fa-regular fa-heart"></i></span>
+                                <span class="material-icons action1"><i class="fa-regular fa-comment"></i></span>
+                                <span class="material-icons action1"><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="images\icons8-bolivian-girl-100.png"
+                                alt="" />
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__headerText">
+                                    <h3>
+                                        Ayushi Tomar
+                                        <span class="post__headerSpecial">@ayuiii</span>
+                                    </h3>
+                                </div>
+                                <div class="post__headerDescription">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <img src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+                                alt="" />
+                            <div class="post__footer">
+                                <span class="material-icons action2"><i class="fa-regular fa-heart"></i></span>
+                                <span class="material-icons action2"><i class="fa-regular fa-comment"></i></span>
+                                <span class="material-icons action2"><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="images\icons8-bolivian-girl-100.png"
+                                alt="" />
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__headerText">
+                                    <h3>
+                                        Ayushi Tomar
+                                        <span class="post__headerSpecial">@ayuiii</span>
+                                    </h3>
+                                </div>
+                                <div class="post__headerDescription">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <img src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+                                alt="" />
+                            <div class="post__footer">
+                                <span class="material-icons action3"><i class="fa-regular fa-heart"></i></span>
+                                <span class="material-icons action3"><i class="fa-regular fa-comment"></i></span>
+                                <span class="material-icons action3"><i class="fa-regular fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+            <div class="brief">
+                <div class="goals">
+                    <div class="input-search">
+                        <i class="fa-solid fa-magnifying-glass"></i><input type="text" class="search" id="search" placeholder="Search User">
+                    </div>
+                    <div class="suggested-profiles">
+                        <h3>Whome to follow?</h3>
+                        <div class="profile-divv profile">
+                            <div class="profile-pic">
+                                <img src="images\icons8-administrator-male-50.png" alt="profile">
+                            </div>
+                            <div class="profile-description">
+                                <b id="profile-heading">Mr. Ayushman Tomar</b>
+                                <b>Sports:</b>
+                                <p>Cricket level-32</p>
+                            </div>
+                        </div>
+                        <div class="profile-divv profile">
+                            <div class="profile-pic">
+                                <img src="images\icons8-bolivian-girl-100.png" alt="profile">
+                            </div>
+                            <div class="profile-description">
+                                <b id="profile-heading">Ms. Ayushi Tomar</b>
+                                <b>Sports:</b>
+                                <p>Badminton level-32</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events">
+                        <h3>Upcoming Events</h3>
+                        <div class="event-item">
+                            <img src="images\football-jersey-svgrepo-com.svg" alt="event">
+                            <div class="event-description">
+                                <b id="event-heading">FOOTBALL MANIA</b>
+                                <b>Pool Price: </b>
+                                <p>1,00,000</p>
+                                <b>Team:</b>
+                                <p>From 1-11 members</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <img src="images\stadium-svgrepo-com.svg" alt="event">
+                            <div class="event-description">
+                                <b id="event-heading">CRICKET GULLY</b>
+                                <b>Pool Price: </b>
+                                <p>1,00,000</p>
+                                <b>Team:</b>
+                                <p>From 1-11 members</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brief-button">
+                    <button class="btn" id="chatav" onclick="openAV()">Chat with AVINYA</button>
+                    <button class="btn" id="support"><i class="fa-solid fa-headset"></i></button>
+                </div>
+
+            </div>
+        </main>
+        <section class="footer" id="footer">
+            <div class="footer-container">
+                <h1 id="cont" class="cnt">Contact Me</h1>
+                <div class="social_icons2">
+                    <div class="icon" id="linkedin1"> <i class="uil uil-twitter-alt"></i></div>
+                    <div class="icon" id="instagram1"> <i class="uil uil-instagram"></i></div>
+                    <div class="icon" id="github1"> <i class="uil uil-phone-alt"></i></div>
+                    <div class="icon" id="mail1"> <i class="uil uil-envelope"></i></div>
+                </div>
+                <span class="mob" style="margin-top: 30px;">Mobile: +91 8318388796</span>
+                <span class="rights">@ all rights reserved Ayushman Tomar</span>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js\pagemain1.js"></script>
+    <script src="js\community.js"></script>
+    "></script>
+</body>
+
+</html>
