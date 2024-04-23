@@ -28,6 +28,8 @@ Contributions are what make the open-source community such an amazing place to l
 5. Open a Pull Request
 
 ## Contact
+Site Link:  https://opti-fit.netlify.app/
 
 Project Link: https://github.com/AyushmanTomar/optifit
+
 
